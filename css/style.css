@@ -1,0 +1,344 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.bodysection {
+    width: 80%;
+    margin-left: 10%;
+    background-color: white;
+}
+
+nav {
+    background-color: orange;
+    display: flex;
+}
+
+.sq {
+    height: 65px;
+    width: 65px;
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*If flex:1 is not used then if won't work*/
+    flex: 1;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+}
+
+.carousel-inner>img {
+    height: 400px;
+}
+
+h2 {
+    font-family: fantasy;
+    font-size: 36px;
+    margin-left: 5%;
+    text-decoration: underline;
+    text-shadow: 2px 2px black;
+}
+
+.galary {
+    position: relative;
+}
+
+.galary > img {
+    height: 200px;
+    width: 250px;
+    margin-left: 3%;
+    padding-bottom: 5px;
+}
+
+.d1 {
+    position: absolute;
+    top: 150px;
+    left: 60px;
+    font-family: fantasy;
+}
+
+span {
+    background-color: lightgoldenrodyellow;
+    opacity: 0.6;
+}
+
+.d2 {
+    position: absolute;
+    top: 350px;
+    left: 60px;
+    font-family: fantasy;
+}
+
+.d3 {
+    position: absolute;
+    top: 550px;
+    left: 60px;
+    font-family: fantasy;
+}
+
+.d4 {
+    position: absolute;
+    top: 750px;
+    left: 60px;
+    font-family: fantasy;
+}
+
+.d5 {
+    position: absolute;
+    top: 950px;
+    left: 60px;
+    font-family: fantasy;
+}
+
+.d6 {
+    position: absolute;
+    top: 1150px;
+    left: 60px;
+    font-family: fantasy;
+}
+
+.d7 {
+    position: absolute;
+    top: 1350px;
+    left: 60px;
+    font-family: fantasy;
+}
+
+.d8 {
+    position: absolute;
+    top: 1550px;
+    left: 60px;
+    font-family: fantasy;
+}
+
+legend {
+    color: blue;
+}
+
+input[type=text] {
+    width: 20%;
+}
+
+label {
+    font-family: monospace;
+}
+
+fieldset {
+    /*First parameter is the X-offset*/
+    /*Second parameter is the Y-offset*/
+    /* The third parameter is the blur */
+    /*the fourth parameter is the spread of the box shadow*/
+    box-shadow: 7px 4px 7px 2px gray;
+}
+
+/* == GRID == */
+
+.wrapper {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-areas:
+        "cont"
+        "article"
+        "aside"
+        "ad";
+}
+
+.cont,
+.art,
+.side,
+.ad {
+    padding: 80px;
+    font-size: 30px;
+}
+
+.cont {
+    grid-area: cont;
+    background-color: #FFA08C;
+    height: 420px;
+}
+
+.art {
+    grid-area: article;
+    background-color: #CAE8B0;
+    height: 420px;
+}
+
+.side {
+    grid-area: aside;
+    background-color: #CFFBFF;
+    height: 400px;
+}
+
+.ad {
+    grid-area: ad;
+    background-color: #E9DE7B;
+    height: 400px;
+}
+
+.footer {
+    padding: 10px 10px;
+    background-color: orange;
+}
+
+@media only screen and (min-width:1098px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 7fr 3fr;
+        grid-template-areas:
+            "cont article"
+            "aside ad";
+        grid-gap: 5px;
+    }
+
+    .d1 {
+        position: absolute;
+        top: 150px;
+        left: 60px;
+        font-family: fantasy;
+    }
+    
+    span {
+        background-color: lightgoldenrodyellow;
+        opacity: 0.6;
+    }
+    
+    .d2 {
+        position: absolute;
+        top: 150px;
+        left: 360px;
+        font-family: fantasy;
+    }
+    
+    .d3 {
+        position: absolute;
+        top: 150px;
+        left: 660px;
+        font-family: fantasy;
+    }
+    
+    .d4 {
+        position: absolute;
+        top: 150px;
+        left: 960px;
+        font-family: fantasy;
+    }
+    
+    .d5 {
+        position: absolute;
+        top: 350px;
+        left: 60px;
+        font-family: fantasy;
+    }
+    
+    .d6 {
+        position: absolute;
+        top: 350px;
+        left: 360px;
+        font-family: fantasy;
+    }
+
+    .d7 {
+        position: absolute;
+        top: 350px;
+        left: 660px;
+        font-family: fantasy;
+    }
+    
+    .d8 {
+        position: absolute;
+        top: 350px;
+        left: 960px;
+        font-family: fantasy;
+    }
+
+}
+
+@media only screen and (min-width:697px) and (max-width:1097px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 7fr 3fr;
+        grid-template-areas:
+            "cont article"
+            "aside ad";
+        grid-gap: 5px;
+    }
+
+    .d1 {
+        position: absolute;
+        top: 150px;
+        left: 60px;
+        font-family: fantasy;
+    }
+    
+    span {
+        background-color: lightgoldenrodyellow;
+        opacity: 0.6;
+    }
+    
+    .d2 {
+        position: absolute;
+        top: 150px;
+        left: 360px;
+        font-family: fantasy;
+    }
+    
+    .d3 {
+        position: absolute;
+        top: 350px;
+        left: 60px;
+        font-family: fantasy;
+    }
+    
+    .d4 {
+        position: absolute;
+        top: 350px;
+        left: 360px;
+        font-family: fantasy;
+    }
+    
+    .d5 {
+        position: absolute;
+        top: 550px;
+        left: 60px;
+        font-family: fantasy;
+    }
+    
+    .d6 {
+        position: absolute;
+        top: 550px;
+        left: 360px;
+        font-family: fantasy;
+    }
+
+    .d7 {
+        position: absolute;
+        top: 750px;
+        left: 60px;
+        font-family: fantasy;
+    }
+    
+    .d8 {
+        position: absolute;
+        top: 750px;
+        left: 360px;
+        font-family: fantasy;
+    }
+
+}
+
+
